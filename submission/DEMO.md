@@ -1,10 +1,10 @@
 # Local demo plan (under 3 minutes)
 
-The [public demo video](https://youtu.be/ZURa0R4VPwc) shows the project working with Twitch and shows how it was built with Codex. It was recorded locally in OBS without starting a Twitch broadcast, using the real `tem1rrllan` channel chat while the channel was offline.
+The [public demo video](https://youtu.be/zrnfwS6Rb74) shows the project working with Twitch and shows how it was built with Codex. It was recorded locally in OBS without starting a Twitch broadcast, using the real `tem1rrllan` channel chat while the channel was offline.
 
 ## Current local review cut
 
-`recordings/quest-director-demo-codex-revision.mp4` is the published 51.5-second, 1280×720 cut with English captions and a local Kokoro voiceover. It shows a labeled test message in the real Twitch chat, the Twitch-sourced approval card, the OBS mission overlay, the translated original user request, original Codex build activity from the session log, clearly labeled later Codex editor footage, and seven passing tests. The recorded run used the rules filter. The Twitch channel remained offline. Earlier cuts and raw OBS recordings are in the same ignored `recordings/` directory. `make_cards.py` generates the title cards and caption graphics; `narration.py --codex-revision` generates the voice track; `make_codex_revision.py` assembles the video. The script is in `NARRATION.md`.
+`recordings/quest-director-demo-submission.mp4` is the published 51.5-second, 1280×720 cut with English captions and a local Kokoro voiceover. It shows a labeled test message in the real Twitch chat, the Twitch-sourced approval card, the OBS mission overlay, the adapted original user request, original Codex build activity from the session log, clearly labeled later Codex editor footage, and seven passing tests. The name of the example game is visibly replaced with `[game]` for the contest video; the original capture remains locally archived. The recorded run used the rules filter. The Twitch channel remained offline. Earlier cuts and raw OBS recordings are in the same ignored `recordings/` directory. `make_cards.py` generates the title cards and caption graphics; `narration.py --codex-revision` generates the voice track; `make_codex_revision.py` assembles the video; `mask_game_title.py` creates the submission cut. The script is in `NARRATION.md`.
 
 ## Before recording
 

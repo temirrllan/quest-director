@@ -56,7 +56,7 @@ CODEX_REVISION_SEGMENTS = TIGHT_SEGMENTS[:5] + [
 ]
 CODEX_REVISION_SEGMENTS[2] = (
     11.2, 18.4,
-    "Twitch Event Sub delivered it. The local rules filter checked the P U B G profile and queued it for review.",
+    "Twitch Event Sub delivered it. The local rules filter checked the selected game profile and queued it for review.",
 )
 
 

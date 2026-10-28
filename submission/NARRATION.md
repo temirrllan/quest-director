@@ -1,6 +1,6 @@
 # English narration for the local review cut
 
-Voice: Kokoro `am_michael`. The original 47.5-second edit shortened static holds from the 75-second original. The published 51.5-second revision adds Codex build evidence and corrects the recorded filter mode. Both scripts describe the recorded offline Twitch test and do not imply a public broadcast or independent viewer participation.
+Voice: Kokoro `am_michael`. The original 47.5-second edit shortened static holds from the 75-second original. The published 51.5-second revision adds Codex build evidence, corrects the recorded filter mode, and avoids speaking the example game's name. Both scripts describe the recorded offline Twitch test and do not imply a public broadcast or independent viewer participation.
 
 | Time | Spoken line |
 | --- | --- |
@@ -17,6 +17,6 @@ Generate the revised voice track with `narration.py --tight`, then run `make_tig
 
 ## Codex build evidence revision (51.5-second review cut)
 
-The first 32.5 seconds retain the functional demo, with its caption and narration corrected to identify the rule fallback actually visible in this recording. At 32.5 seconds the video shows an English translation of the user's original game-specific challenge brief. At 37 seconds it lists the files added in the original Codex build turn (`ai.mjs`, `core.mjs`, `server.mjs`, `public/app.js`, `public/overlay.js`) alongside a genuine later Codex editor recording. The recording's unrelated chat history, OBS preview, and later documentation diff are masked. A test card and end card follow. The original build turn also ran `node --check` and `npm test`; all seven current tests pass.
+The first 32.5 seconds retain the functional demo, with its caption and narration corrected to identify the rule fallback actually visible in this recording. At 32.5 seconds the video shows an English adaptation of the user's original game-specific challenge brief. At 37 seconds it lists the files added in the original Codex build turn (`ai.mjs`, `core.mjs`, `server.mjs`, `public/app.js`, `public/overlay.js`) alongside a genuine later Codex editor recording. The recording's unrelated chat history, OBS preview, and later documentation diff are masked. A test card and end card follow. The original build turn also ran `node --check` and `npm test`; all seven current tests pass.
 
-Generate with `narration.py --codex-revision` and `make_codex_revision.py`. The output is `recordings/quest-director-demo-codex-revision.mp4`. This revision is [published on YouTube](https://youtu.be/ZURa0R4VPwc).
+Generate with `narration.py --codex-revision` and `make_codex_revision.py`, then run `mask_game_title.py`. The output is `recordings/quest-director-demo-submission.mp4`. The contest revision is [published on YouTube](https://youtu.be/zrnfwS6Rb74). The specific game name is visibly replaced with `[game]`; the original capture remains locally archived.

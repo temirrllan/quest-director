@@ -8,7 +8,7 @@ What this 51-second demo shows:
 00:11 — Twitch EventSub delivers the idea; the local rules filter checks the game profile
 00:19 — Streamer approval sends the mission to the OBS overlay
 00:26 — The streamer marks the outcome
-00:32 — Original request to Codex, translated from Russian
+00:32 — Original request to Codex, adapted from Russian
 00:37 — Original Codex build activity from the session log, with later Codex editor footage
 00:44 — Seven passing automated tests
 
@@ -24,3 +24,4 @@ The recorded run used the rules filter. Optional local AI via Ollama can check r
 Built with OpenAI Codex for Codex x TwitchCon 2026.
 Codex session ID: 01a17eb0-74ff-76e3-8410-200707749db4
 No public Twitch broadcast was started for this recording.
+The name of the example game is visibly replaced with [game] in the video to avoid showing an unlicensed third-party mark. The chat message, app workflow, and Codex footage are otherwise the recorded demo.

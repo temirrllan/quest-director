@@ -2,7 +2,7 @@
 
 An interactive Twitch challenge director built with Codex during the Codex x TwitchCon 2026 submission period. Viewers suggest challenges in chat. The app filters and rewrites ideas for the streamer's selected game, and the streamer approves each on-air mission. The overlay shows the active mission. The streamer marks its outcome.
 
-**Public demo video:** [Quest Director — Twitch Chat to OBS Challenges | Built with Codex](https://youtu.be/ZURa0R4VPwc) (51.5 seconds).
+**Public demo video:** [Quest Director — Twitch Chat Challenges | Built with Codex](https://youtu.be/zrnfwS6Rb74) (51.5 seconds).
 
 ## Start locally
 
@@ -47,4 +47,4 @@ The access token is validated with Twitch and kept only in the local server proc
 
 ## Hackathon materials
 
-The English [submission copy](submission/DEVPOST.md) and [demo plan](submission/DEMO.md) are in `submission/`. The [public YouTube demo](https://youtu.be/ZURa0R4VPwc) is the 51.5-second revision with English captions and voiceover. Its local source file is `submission/recordings/quest-director-demo-codex-revision.mp4` (ignored by Git). Earlier cuts remain under `submission/recordings/` for comparison. The Devpost submission remains a separate step. The Codex session ID for this build is `01a17eb0-74ff-76e3-8410-200707749db4`.
+The English [submission copy](submission/DEVPOST.md) and [demo plan](submission/DEMO.md) are in `submission/`. The [public YouTube demo](https://youtu.be/zrnfwS6Rb74) is the 51.5-second revision with English captions and voiceover. Its local source file is `submission/recordings/quest-director-demo-submission.mp4` (ignored by Git). The example game name is visibly replaced with `[game]` in this submission cut. Earlier cuts remain under `submission/recordings/` for comparison. The Devpost submission remains a separate step. The Codex session ID for this build is `01a17eb0-74ff-76e3-8410-200707749db4`.

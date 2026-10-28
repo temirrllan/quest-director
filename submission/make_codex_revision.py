@@ -44,11 +44,11 @@ def make_images() -> None:
     d.multiline_text(
         (135, 335),
         '"Make an AI director of viewer challenges\n'
-        "that each streamer can customize. For PUBG,\n"
-        'accept ideas related to that game."',
+        "that each streamer can customize. Start with\n"
+        'one battle royale game."',
         font=font(34), fill=WHITE, spacing=12,
     )
-    d.text((135, 620), "Translated from the original Russian request in Codex", font=font(22), fill=MUTED)
+    d.text((135, 620), "Adapted from the original Russian request in Codex", font=font(22), fill=MUTED)
     brief.save(PROMPT)
 
     # The recorded run visibly used rule fallback, so correct the old caption

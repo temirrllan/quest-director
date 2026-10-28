@@ -41,8 +41,8 @@ The access token is validated with Twitch and kept only in the local server proc
 - Duplicate suggestions are grouped. Unrelated and unsafe ideas are rejected. The streamer approves, skips, completes, or fails a challenge.
 - The overlay shows only the streamer's approved challenge, never raw chat.
 - Game achievements are **not** automatically verified. The streamer marks the outcome.
-- Broader model quality remains untested. The overlay has been verified in an OBS Browser Source. A 75-second local review video shows the real Twitch chat test, the streamer approval flow, the OBS overlay, and a Codex build clip. The channel was offline throughout; no public stream was started.
+- Broader model quality remains untested. The overlay has been verified in an OBS Browser Source. A 47.5-second local review video shows the real Twitch chat test, the streamer approval flow, the OBS overlay, and a Codex build clip. The channel was offline throughout; no public stream was started.
 
 ## Hackathon materials
 
-The English submission copy and local recording plan are in [submission/](submission/). The current 47.5-second review video with English captions and voiceover is `submission/recordings/quest-director-demo-tight.mp4` (ignored by Git). The original 75-second voiced cut and silent cut remain under `submission/recordings/` for comparison. A public YouTube upload and the Devpost submission remain separate steps. The Codex session ID for this build is `01a17eb0-74ff-76e3-8410-200707749db4`.
+The English [submission copy](submission/DEVPOST.md) and [demo plan](submission/DEMO.md) are in `submission/`. The current 47.5-second review video with English captions and voiceover is `submission/recordings/quest-director-demo-tight.mp4` (ignored by Git). The original 75-second voiced cut and silent cut remain under `submission/recordings/` for comparison. A public YouTube upload and the Devpost submission remain separate steps. The Codex session ID for this build is `01a17eb0-74ff-76e3-8410-200707749db4`.

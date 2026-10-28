@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="en">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Quest Director — make chat part of the game</title><link rel="stylesheet" href="/styles.css"></head>
+<body>
+  <header class="top"><div class="brand"><span class="brand-mark">QD<span>✳</span></span><span>QUEST<br><strong>DIRECTOR</strong></span></div><div class="top-right"><span id="ai-mode">RULES ONLY</span><span id="connection-pill" class="pill">DEMO MODE</span></div></header>
+  <main class="wrap">
+    <section class="hero"><div><p class="eyebrow">CHAT IDEAS → ON-STREAM MISSIONS</p><h1>Give chat a say.<br><em>Keep the show yours.</em></h1></div><p>Viewers suggest challenges. The director filters them for your game. You choose what goes on air and decide when the mission is done.</p></section>
+    <div class="grid">
+      <section class="panel queue-panel"><div class="panel-head"><div><p class="eyebrow">01 / INCOMING</p><h2>Challenge queue</h2></div><span id="queue-count" class="count">0 READY</span></div><div id="queue" class="queue"><p class="empty">Waiting for chat suggestions.</p></div></section>
+      <aside class="side">
+        <section class="panel live-panel"><div class="panel-head"><div><p class="eyebrow">02 / ON STREAM</p><h2>Live mission</h2></div><span class="star">✳</span></div><div id="active" class="empty">Approve a challenge to put it on air.</div><div class="preview"><iframe title="Overlay preview" src="/overlay.html"></iframe></div><a class="inline-link" href="/overlay.html" target="_blank" rel="noopener">Open OBS overlay ↗</a></section>
+        <section class="panel connect-panel"><div class="panel-head"><div><p class="eyebrow">03 / LIVE INPUT</p><h2>Twitch chat</h2></div></div><p id="connection-detail" class="hint">Demo mode ready</p><p id="auth-detail" class="hint">Twitch authorization needed.</p><form id="auth-form"><label for="client-id">Twitch application Client ID</label><input id="client-id" autocomplete="off" spellcheck="false" placeholder="Client ID from Developer Console"><p class="hint">Register this OAuth redirect URL in Twitch: <code id="redirect-url"></code></p><button type="submit" class="secondary">Authorize chat access ↗</button></form><form id="connect-form" class="row connect-row"><span>#</span><input id="channel" aria-label="Twitch channel" placeholder="tem1rrllan" autocomplete="off"><button type="submit">Connect</button></form><button id="disconnect" class="text-button" type="button">Disconnect</button></section>
+      </aside>
+    </div>
+    <div class="grid lower">
+      <section class="panel"><div class="panel-head"><div><p class="eyebrow">04 / REHEARSAL</p><h2>Test the loop</h2></div></div><p class="hint">Demo chat uses the same pipeline as Twitch chat. Cards are labeled DEMO.</p><form id="suggest-form"><label for="viewer">Viewer</label><input id="viewer" value="test_viewer"><label for="message">Chat suggestion</label><textarea id="message" rows="3" placeholder="Get three headshots in one match" required></textarea><div class="actions"><button type="submit">Send suggestion ↗</button><button id="demo" type="button" class="secondary">Load sample chat</button></div></form></section>
+      <section class="panel"><div class="panel-head"><div><p class="eyebrow">05 / STREAM PROFILE</p><h2>Make it your game</h2></div></div><form id="profile-form"><div class="form-grid"><div><label for="game">Game or stream format</label><input id="game" maxlength="60" required></div><div><label for="difficulty">Difficulty</label><select id="difficulty"><option value="easy">Easy</option><option value="medium">Medium</option><option value="hard">Hard</option></select></div></div><label for="style">Your style</label><input id="style" maxlength="180"><label for="forbidden">Forbidden challenge types</label><textarea id="forbidden" rows="2" maxlength="300"></textarea><label for="minutes">Challenge time limit, minutes</label><input id="minutes" type="number" min="1" max="120"><button type="submit" class="secondary">Save profile</button></form></section>
+    </div>
+    <section class="history"><div><p class="eyebrow">06 / STREAM STORY</p><h2>Completed missions</h2></div><div id="history" class="history-list"><span>No results yet.</span></div></section>
+    <p id="notice" class="notice" role="status" aria-live="polite"></p>
+  </main>
+  <footer><span>QUEST DIRECTOR / BUILT WITH CODEX</span><span>Streamer approval before every on-air mission.</span></footer>
+  <script type="module" src="/app.js"></script>
+</body></html>

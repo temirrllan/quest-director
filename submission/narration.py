@@ -5,6 +5,7 @@ Model files belong in recordings/ and are intentionally not committed.
 """
 
 from pathlib import Path
+import argparse
 import shutil
 
 import numpy as np
@@ -34,8 +35,25 @@ SEGMENTS = [
     (71.7, 75.45, "Quest Director. Chat shapes the show."),
 ]
 
+TIGHT_SEGMENTS = [
+    (0.15, 4.0, "Quest Director. Make chat part of the game."),
+    (4.3, 10.9, "I posted a labeled test challenge in my real Twitch chat while the channel was offline."),
+    (11.2, 18.4, "Twitch Event Sub delivered it. Local AI checked the P U B G profile and queued it for review."),
+    (18.9, 25.9, "My approval put the mission on the O B S overlay. The streamer controls what appears on air."),
+    (26.4, 32.4, "I marked this test as missed. Gameplay results are not automatically verified."),
+    (32.8, 39.9, "I built the Twitch connection, challenge pipeline, dashboard, and O B S overlay with Codex."),
+    (40.1, 43.4, "Seven automated tests pass."),
+    (43.8, 47.4, "Quest Director. Chat shapes the show."),
+]
+
 
 def main() -> None:
+    parser = argparse.ArgumentParser()
+    parser.add_argument("--tight", action="store_true", help="Generate voiceover for the shorter review cut")
+    args = parser.parse_args()
+    segments = TIGHT_SEGMENTS if args.tight else SEGMENTS
+    duration = 47.5 if args.tight else VIDEO_DURATION
+    output = RECORDINGS / "quest-director-voiceover-tight.wav" if args.tight else OUTPUT
     # With this macOS wheel, eSpeak looks for phontab beside the bundled
     # espeak-ng-data folder. Repair the isolated venv layout on first run.
     data = Path(espeakng_loader.get_data_path())
@@ -49,8 +67,8 @@ def main() -> None:
     espeak = EspeakConfig(data_path=str(data.parent))
     kokoro = Kokoro(str(MODEL), str(VOICES), espeak_config=espeak)
     sample_rate = 24000
-    track = np.zeros(round(VIDEO_DURATION * sample_rate), dtype=np.float32)
-    for start, end, words in SEGMENTS:
+    track = np.zeros(round(duration * sample_rate), dtype=np.float32)
+    for start, end, words in segments:
         samples, rate = kokoro.create(words, voice="am_michael", speed=1.06, lang="en-us")
         if rate != sample_rate:
             raise RuntimeError(f"Unexpected sample rate: {rate}")
@@ -66,8 +84,8 @@ def main() -> None:
         print(f"{start:5.1f}–{start + len(samples) / rate:5.1f}s  {words}")
     peak = max(float(np.max(np.abs(track))), 1e-6)
     track *= min(0.85 / peak, 1.0)
-    sf.write(OUTPUT, track, sample_rate)
-    print(OUTPUT)
+    sf.write(output, track, sample_rate)
+    print(output)
 
 
 if __name__ == "__main__":

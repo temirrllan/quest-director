@@ -1,10 +1,10 @@
 # Local demo plan (under 3 minutes)
 
-The [public demo video](https://youtu.be/qWdyoRSuWkc) shows the project working with Twitch and shows Codex use. It was recorded locally in OBS without starting a Twitch broadcast, using the real `tem1rrllan` channel chat while the channel was offline.
+The [public demo video](https://youtu.be/ZURa0R4VPwc) shows the project working with Twitch and shows how it was built with Codex. It was recorded locally in OBS without starting a Twitch broadcast, using the real `tem1rrllan` channel chat while the channel was offline.
 
 ## Current local review cut
 
-`recordings/quest-director-demo-tight.mp4` is the current 47.5-second, 1280×720 review cut with English captions and a local Kokoro voiceover. It shortens the static holds in the original 75-second voiced cut. `recordings/quest-director-demo.mp4` is the original silent version. The video shows a labeled test message in the real Twitch chat, the Twitch-sourced approval card, the OBS mission overlay, a masked Codex window showing project code, and the seven passing test cases. The mask hides unrelated private chat history in the Codex window. The Twitch channel remained offline. The raw OBS recordings are in the same ignored `recordings/` directory. `make_cards.py` generates the title cards and caption graphics; `narration.py --tight` generates the revised voice track; `make_tight_cut.py` assembles the video. The script is in `NARRATION.md`.
+`recordings/quest-director-demo-codex-revision.mp4` is the published 51.5-second, 1280×720 cut with English captions and a local Kokoro voiceover. It shows a labeled test message in the real Twitch chat, the Twitch-sourced approval card, the OBS mission overlay, the translated original user request, original Codex build activity from the session log, clearly labeled later Codex editor footage, and seven passing tests. The recorded run used the rules filter. The Twitch channel remained offline. Earlier cuts and raw OBS recordings are in the same ignored `recordings/` directory. `make_cards.py` generates the title cards and caption graphics; `narration.py --codex-revision` generates the voice track; `make_codex_revision.py` assembles the video. The script is in `NARRATION.md`.
 
 ## Before recording
 
@@ -23,9 +23,10 @@ The [public demo video](https://youtu.be/qWdyoRSuWkc) shows the project working 
 | 0:11–0:19 | Matching `TWITCH` card in the queue | Describe EventSub and game-profile filtering. |
 | 0:19–0:26 | Streamer approval and OBS mission overlay | Show that approval controls what appears on air. |
 | 0:26–0:33 | Mark the mission missed | Explain that gameplay outcomes are not automatically verified. |
-| 0:33–0:40 | Codex title and masked workspace clip | Explain what was built with Codex. |
-| 0:40–0:44 | Seven passing tests | Confirm the local checks. |
-| 0:44–0:47.5 | End card | Close the demo. |
+| 0:33–0:37 | Translated original user request | Show the initial game-specific challenge brief. |
+| 0:37–0:44 | Original Codex build activity and labeled later editor footage | Show what Codex built and distinguish the recording time. |
+| 0:44–0:48 | Seven passing tests | Confirm the local checks. |
+| 0:48–0:51.5 | End card | Close the demo. |
 
 ## Export check
 
@@ -33,4 +34,4 @@ The [public demo video](https://youtu.be/qWdyoRSuWkc) shows the project working 
 - Actual Twitch chat and a card labeled `TWITCH` are visible; do not substitute the demo feed for this shot.
 - OBS overlay and Codex use are visible.
 - No copyrighted music, unauthorized footage, access tokens, or private information.
-- The finished video was published to YouTube as **Public** on October 28, 2026. Add its URL to the Devpost submission.
+- The revised video was published to YouTube as **Public** on October 28, 2026. Add its URL to the Devpost submission.

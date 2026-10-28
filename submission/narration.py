@@ -46,14 +46,30 @@ TIGHT_SEGMENTS = [
     (43.8, 47.4, "Quest Director. Chat shapes the show."),
 ]
 
+# Longer review cut with the original brief, the Codex build log, and real
+# Codex screen footage visible instead of a generic "Built with Codex" card.
+CODEX_REVISION_SEGMENTS = TIGHT_SEGMENTS[:5] + [
+    (32.8, 36.8, "I asked Codex to build game-specific viewer challenges."),
+    (37.1, 43.9, "It created the challenge engine, Twitch connection, dashboard, and O B S overlay."),
+    (44.1, 47.4, "Seven automated tests pass."),
+    (47.9, 51.4, "Quest Director. Chat shapes the show."),
+]
+CODEX_REVISION_SEGMENTS[2] = (
+    11.2, 18.4,
+    "Twitch Event Sub delivered it. The local rules filter checked the P U B G profile and queued it for review.",
+)
+
 
 def main() -> None:
     parser = argparse.ArgumentParser()
     parser.add_argument("--tight", action="store_true", help="Generate voiceover for the shorter review cut")
+    parser.add_argument("--codex-revision", action="store_true", help="Generate voiceover for the Codex build review cut")
     args = parser.parse_args()
-    segments = TIGHT_SEGMENTS if args.tight else SEGMENTS
-    duration = 47.5 if args.tight else VIDEO_DURATION
-    output = RECORDINGS / "quest-director-voiceover-tight.wav" if args.tight else OUTPUT
+    if args.tight and args.codex_revision:
+        parser.error("Choose only one cut")
+    segments = CODEX_REVISION_SEGMENTS if args.codex_revision else TIGHT_SEGMENTS if args.tight else SEGMENTS
+    duration = 51.5 if args.codex_revision else 47.5 if args.tight else VIDEO_DURATION
+    output = RECORDINGS / "quest-director-voiceover-codex-revision.wav" if args.codex_revision else RECORDINGS / "quest-director-voiceover-tight.wav" if args.tight else OUTPUT
     # With this macOS wheel, eSpeak looks for phontab beside the bundled
     # espeak-ng-data folder. Repair the isolated venv layout on first run.
     data = Path(espeakng_loader.get_data_path())

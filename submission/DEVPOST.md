@@ -29,6 +29,6 @@ Add streamer-defined challenge templates for more games, better moderation contr
 ## Submission links
 
 - Repository URL: https://github.com/temirrllan/quest-director
-- Public YouTube demo URL: https://youtu.be/qWdyoRSuWkc
+- Public YouTube demo URL: https://youtu.be/ZURa0R4VPwc
 - Codex session ID: `01a17eb0-74ff-76e3-8410-200707749db4`
 - Demo recording: local recording, no public Twitch broadcast

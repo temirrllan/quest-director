@@ -71,10 +71,11 @@ for filename, (eyebrow, title, subtitle) in CARDS.items():
 for index, (first, second) in enumerate(CAPTIONS, start=1):
     image = Image.new("RGBA", (1280, 720), (0, 0, 0, 0))
     draw = ImageDraw.Draw(image)
-    draw.rounded_rectangle((42, 564, 1238, 698), radius=20, fill=(5, 8, 9, 226))
-    draw.rounded_rectangle((63, 585, 70, 677), radius=3, fill="#d0fa5c")
-    draw.text((91, 582), first, font=ImageFont.truetype(BOLD, 27), fill="#f5f7ed")
-    draw.text((91, 631), second, font=ImageFont.truetype(REGULAR, 25), fill="#b8c5bd")
+    top = 55 if index == 3 else 564  # Keep the OBS mission visible at bottom-left.
+    draw.rounded_rectangle((42, top, 1238, top + 134), radius=20, fill=(5, 8, 9, 226))
+    draw.rounded_rectangle((63, top + 21, 70, top + 113), radius=3, fill="#d0fa5c")
+    draw.text((91, top + 18), first, font=ImageFont.truetype(BOLD, 27), fill="#f5f7ed")
+    draw.text((91, top + 67), second, font=ImageFont.truetype(REGULAR, 25), fill="#b8c5bd")
     image.save(OUT / f"caption-{index}.png")
 
 # Cover unrelated chat history in the captured Codex window. The Codex header

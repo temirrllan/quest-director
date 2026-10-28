@@ -41,8 +41,8 @@ The access token is validated with Twitch and kept only in the local server proc
 - Duplicate suggestions are grouped. Unrelated and unsafe ideas are rejected. The streamer approves, skips, completes, or fails a challenge.
 - The overlay shows only the streamer's approved challenge, never raw chat.
 - Game achievements are **not** automatically verified. The streamer marks the outcome.
-- Broader model quality and the required submission video remain to be tested. The overlay has been verified in an OBS Browser Source, but a public stream is not required to rehearse locally.
+- Broader model quality remains untested. The overlay has been verified in an OBS Browser Source. A 75-second local review video shows the real Twitch chat test, the streamer approval flow, the OBS overlay, and a Codex build clip. The channel was offline throughout; no public stream was started.
 
 ## Hackathon materials
 
-The English submission copy and local recording plan are in [submission/](submission/). The Codex session ID for this build is `01a17eb0-74ff-76e3-8410-200707749db4`.
+The English submission copy and local recording plan are in [submission/](submission/). The local review video is `submission/recordings/quest-director-demo.mp4` (ignored by Git). It has English on-screen captions and no audio. A public YouTube upload and the Devpost submission remain separate steps. The Codex session ID for this build is `01a17eb0-74ff-76e3-8410-200707749db4`.

@@ -1,6 +1,6 @@
 # Local demo plan (under 3 minutes)
 
-The final video must show the project working with Twitch and show Codex use. Record locally in OBS; do not start a Twitch broadcast. Use the real `tem1rrllan` channel chat while the channel is offline. The final upload to YouTube is a separate step.
+The [public demo video](https://youtu.be/qWdyoRSuWkc) shows the project working with Twitch and shows Codex use. It was recorded locally in OBS without starting a Twitch broadcast, using the real `tem1rrllan` channel chat while the channel was offline.
 
 ## Current local review cut
 
@@ -33,4 +33,4 @@ The final video must show the project working with Twitch and show Codex use. Re
 - Actual Twitch chat and a card labeled `TWITCH` are visible; do not substitute the demo feed for this shot.
 - OBS overlay and Codex use are visible.
 - No copyrighted music, unauthorized footage, access tokens, or private information.
-- Upload the finished video to YouTube as **Public**, then add its URL to Devpost.
+- The finished video was published to YouTube as **Public** on October 28, 2026. Add its URL to the Devpost submission.

@@ -26,9 +26,9 @@ The hardest part was keeping viewer input useful without letting it take control
 
 Add streamer-defined challenge templates for more games, better moderation controls, and richer overlays. Game outcomes are currently marked by the streamer; automatic game-state verification is outside this version.
 
-## Submission fields to add after production
+## Submission links
 
 - Repository URL: https://github.com/temirrllan/quest-director
-- Public YouTube demo URL: pending
+- Public YouTube demo URL: https://youtu.be/qWdyoRSuWkc
 - Codex session ID: `01a17eb0-74ff-76e3-8410-200707749db4`
 - Demo recording: local recording, no public Twitch broadcast

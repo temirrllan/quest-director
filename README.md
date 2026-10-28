@@ -2,6 +2,8 @@
 
 An interactive Twitch challenge director built with Codex during the Codex x TwitchCon 2026 submission period. Viewers suggest challenges in chat. The app filters and rewrites ideas for the streamer's selected game, and the streamer approves each on-air mission. The overlay shows the active mission. The streamer marks its outcome.
 
+**Public demo video:** [Quest Director — Twitch Chat Challenges with AI](https://youtu.be/qWdyoRSuWkc) (47.5 seconds).
+
 ## Start locally
 
 Node.js 22 or newer is required. No dependencies or paid API key are needed for the rules-only rehearsal.
@@ -45,4 +47,4 @@ The access token is validated with Twitch and kept only in the local server proc
 
 ## Hackathon materials
 
-The English [submission copy](submission/DEVPOST.md) and [demo plan](submission/DEMO.md) are in `submission/`. The current 47.5-second review video with English captions and voiceover is `submission/recordings/quest-director-demo-tight.mp4` (ignored by Git). The original 75-second voiced cut and silent cut remain under `submission/recordings/` for comparison. A public YouTube upload and the Devpost submission remain separate steps. The Codex session ID for this build is `01a17eb0-74ff-76e3-8410-200707749db4`.
+The English [submission copy](submission/DEVPOST.md) and [demo plan](submission/DEMO.md) are in `submission/`. The [public YouTube demo](https://youtu.be/qWdyoRSuWkc) is the 47.5-second cut with English captions and voiceover. Its local source file is `submission/recordings/quest-director-demo-tight.mp4` (ignored by Git). The original 75-second voiced cut and silent cut remain under `submission/recordings/` for comparison. The Devpost submission remains a separate step. The Codex session ID for this build is `01a17eb0-74ff-76e3-8410-200707749db4`.

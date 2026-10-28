@@ -4,7 +4,7 @@ The final video must show the project working with Twitch and show Codex use. Re
 
 ## Current local review cut
 
-`recordings/quest-director-demo.mp4` is a 75-second, 1280×720 local review cut with English on-screen captions and no audio. It shows a labeled test message in the real Twitch chat, the Twitch-sourced approval card, the OBS mission overlay, a masked Codex window showing project code, and the seven passing test cases. The mask hides unrelated private chat history in the Codex window. The Twitch channel remained offline. The raw OBS recordings are in the same ignored `recordings/` directory. `make_cards.py` generates the title cards and caption graphics.
+`recordings/quest-director-demo-voiced.mp4` is the 75-second, 1280×720 review cut with English captions and a local Kokoro voiceover. `recordings/quest-director-demo.mp4` is the original silent version. The video shows a labeled test message in the real Twitch chat, the Twitch-sourced approval card, the OBS mission overlay, a masked Codex window showing project code, and the seven passing test cases. The mask hides unrelated private chat history in the Codex window. The Twitch channel remained offline. The raw OBS recordings are in the same ignored `recordings/` directory. `make_cards.py` generates the title cards and caption graphics; `narration.py` generates the voice track. The script is in `NARRATION.md`.
 
 ## Before recording
 

@@ -45,4 +45,4 @@ The access token is validated with Twitch and kept only in the local server proc
 
 ## Hackathon materials
 
-The English submission copy and local recording plan are in [submission/](submission/). The local review video is `submission/recordings/quest-director-demo.mp4` (ignored by Git). It has English on-screen captions and no audio. A public YouTube upload and the Devpost submission remain separate steps. The Codex session ID for this build is `01a17eb0-74ff-76e3-8410-200707749db4`.
+The English submission copy and local recording plan are in [submission/](submission/). The local review video with English captions and voiceover is `submission/recordings/quest-director-demo-voiced.mp4` (ignored by Git). The silent cut remains at `submission/recordings/quest-director-demo.mp4`. A public YouTube upload and the Devpost submission remain separate steps. The Codex session ID for this build is `01a17eb0-74ff-76e3-8410-200707749db4`.

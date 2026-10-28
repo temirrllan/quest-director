@@ -1,0 +1,15 @@
+1
+00:00:01,000 --> 00:00:13,000
+A test suggestion is posted in the real Twitch chat for tem1rrllan. This channel is offline; no public stream is running.
+
+2
+00:00:14,000 --> 00:00:25,000
+Twitch EventSub delivers the message to Quest Director. The local AI checks it against the PUBG stream profile and puts it in the approval queue.
+
+3
+00:00:26,000 --> 00:00:36,000
+After streamer approval, the challenge appears in the OBS overlay. Chat cannot put a mission on screen by itself.
+
+4
+00:00:37,000 --> 00:00:48,000
+The streamer marks the test mission as not completed. Game outcomes are not automatically verified in this prototype.

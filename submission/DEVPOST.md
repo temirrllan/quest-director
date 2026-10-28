@@ -28,7 +28,7 @@ Add streamer-defined challenge templates for more games, better moderation contr
 
 ## Submission fields to add after production
 
-- Repository URL: pending
+- Repository URL: https://github.com/temirrllan/quest-director
 - Public YouTube demo URL: pending
 - Codex session ID: `01a17eb0-74ff-76e3-8410-200707749db4`
 - Demo recording: local recording, no public Twitch broadcast

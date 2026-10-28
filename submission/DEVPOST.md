@@ -1,4 +1,4 @@
-# Quest Director — Devpost draft
+# Quest Director — Devpost submission
 
 ## One-line pitch
 
@@ -29,6 +29,7 @@ Add streamer-defined challenge templates for more games, better moderation contr
 ## Submission links
 
 - Repository URL: https://github.com/temirrllan/quest-director
+- Submitted project: https://devpost.com/software/quest-director
 - Public YouTube demo URL: https://youtu.be/zrnfwS6Rb74
 - Codex session ID: `01a17eb0-74ff-76e3-8410-200707749db4`
 - Demo recording: local recording, no public Twitch broadcast
